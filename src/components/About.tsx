@@ -1,21 +1,21 @@
 
-import { Code, Coffee, Gamepad2, Music } from 'lucide-react';
+import { Code, Award, Film, Music } from 'lucide-react';
 
 const About = () => {
   const skills = [
-    { name: 'JavaScript/TypeScript', level: 95 },
-    { name: 'React/Next.js', level: 90 },
-    { name: 'Node.js', level: 85 },
-    { name: 'Python', level: 80 },
-    { name: 'UI/UX Design', level: 75 },
-    { name: 'Database Design', level: 70 },
+    { name: 'Python', level: 95 },
+    { name: 'Flask', level: 70 },
+    { name: 'Django', level: 40 },
+    { name: 'DSA', level: 40 },
+    { name: 'NLP', level: 37 },
+    { name: 'Elasticsearch', level: 70 },
   ];
 
   const interests = [
     { icon: Code, label: 'Open Source' },
-    { icon: Coffee, label: 'Coffee Enthusiast' },
-    { icon: Music, label: 'Music Production' },
-    { icon: Gamepad2, label: 'Gaming' },
+    { icon: Award, label: 'Cricket Enthusiast' },
+    { icon: Music, label: 'Listening Music' },
+    { icon: Film, label: 'Watching Movies' },
   ];
 
   return (
@@ -33,22 +33,21 @@ const About = () => {
               <h3 className="text-2xl font-semibold text-white mb-6">My Story</h3>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  Hi! I'm Alex, a passionate frontend developer with over 5 years of experience 
-                  creating digital experiences that matter. I specialize in React, TypeScript, 
-                  and modern web technologies.
+                  I'm a Backend Software Engineer with 8 months of experience, focused on Python-based 
+                  development, API integration, and automation.
                 </p>
                 <p>
-                  My journey started with a curiosity about how websites work, which quickly 
-                  evolved into a love for crafting intuitive user interfaces. I believe in 
-                  writing clean, maintainable code and creating accessible experiences for all users.
+                  I've worked with Flask, Django, MongoDB, Sql, and implemented JWT-based authentication.I also 
+                  have hands-on experience with Elasticsearch for search functionality and NLP projects 
+                  involving text analysis.
                 </p>
                 <p>
-                  When I'm not coding, you'll find me contributing to open-source projects, 
-                  experimenting with new technologies, or exploring the great outdoors with my camera.
+                  I continuously strive to improve my skills in Python, system design, and emerging technologies
+                  like Generative AI.
                 </p>
                 <p>
-                  I'm always excited to take on new challenges and collaborate with teams 
-                  that share my passion for excellence and innovation.
+                  Currently, I am looking for challenging opportunities where I can contribute to impactful 
+                  projects, enhance my development skills and grow as a software engineer.
                 </p>
               </div>
             </div>

@@ -6,60 +6,73 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const Resume = () => {
   const experiences = [
     {
-      company: 'TechCorp Solutions',
-      position: 'Senior Frontend Developer',
-      period: '2022 - Present',
-      location: 'San Francisco, CA',
-      achievements: [
-        'Led a team of 4 developers in building a new customer portal that increased user engagement by 40%',
-        'Architected and implemented a component library used across 5+ products',
-        'Reduced page load times by 60% through performance optimization techniques',
-        'Mentored junior developers and conducted code reviews'
-      ]
-    },
-    {
-      company: 'StartupXYZ',
-      position: 'Frontend Developer',
-      period: '2020 - 2022',
-      location: 'New York, NY',
-      achievements: [
-        'Built responsive web applications serving 50K+ monthly active users',
-        'Collaborated with design team to implement pixel-perfect UI components',
-        'Integrated third-party APIs and payment systems (Stripe, PayPal)',
-        'Improved code coverage from 45% to 85% through comprehensive testing'
-      ]
-    },
-    {
-      company: 'Digital Agency Pro',
-      position: 'Junior Frontend Developer',
-      period: '2019 - 2020',
-      location: 'Austin, TX',
-      achievements: [
-        'Developed client websites using React, HTML5, CSS3, and JavaScript',
-        'Worked closely with designers to translate mockups into functional interfaces',
-        'Optimized websites for SEO and accessibility standards',
-        'Maintained and updated existing client projects'
-      ]
+      company: 'MapRecruit',
+      position: 'Associate Software Engineer',
+      period: '2024 - 2025',
+      location: 'Hyderabad, Telangana, India',
+      projects: [
+      {
+        title: 'Data Indexing and Search with Elasticsearch',
+        achievements: [
+          "Developed data pipelines to extract, transform, and load (ETL) data from MongoDB into Elasticsearch",
+          "Optimized Elasticsearch indexing and query performance for fast and relevant search results",
+          "Designed REST APIs to interact with Elasticsearch for various search functionalities",
+          "Implemented search-related features, including full-text search, filtering, and ranking",
+          "Monitored and maintained Elasticsearch clusters for scalability and stability"
+        ]
+      },
+      {
+        title: 'NLP-based Model Training with spaCy',
+        achievements: [
+          "Developed custom NLP models for entity recognition, text classification, and parsing using spaCy",
+          "Created and annotated training datasets for improving model accuracy",
+          "Designed and optimized preprocessing pipelines for text normalization, tokenization, and stemming",
+          "Integrated trained models into Flask-based APIs for deployment in real-world applications",
+          "Conducted model evaluations and fine-tuning for better performance."
+        ]
+      }
+    ]
     }
+    // {
+    //   company: 'StartupXYZ',
+    //   position: 'Frontend Developer',
+    //   period: '2020 - 2022',
+    //   location: 'New York, NY',
+    //   achievements: [
+    //     'Built responsive web applications serving 50K+ monthly active users',
+    //     'Collaborated with design team to implement pixel-perfect UI components',
+    //     'Integrated third-party APIs and payment systems (Stripe, PayPal)',
+    //     'Improved code coverage from 45% to 85% through comprehensive testing'
+    //   ]
+    // },
+    // {
+    //   company: 'Digital Agency Pro',
+    //   position: 'Junior Frontend Developer',
+    //   period: '2019 - 2020',
+    //   location: 'Austin, TX',
+    //   achievements: [
+    //     'Developed client websites using React, HTML5, CSS3, and JavaScript',
+    //     'Worked closely with designers to translate mockups into functional interfaces',
+    //     'Optimized websites for SEO and accessibility standards',
+    //     'Maintained and updated existing client projects'
+    //   ]
+    // }
   ];
 
   const education = [
     {
-      institution: 'University of California, Berkeley',
-      degree: 'Bachelor of Science in Computer Science',
-      period: '2015 - 2019',
+      institution: 'Khammam Institute Of Technology and Sciences',
+      degree: "B.Tech in Computer Science and Engineering",
+      period: '2019 - 2023',
       achievements: [
-        'Magna Cum Laude Graduate',
-        'President of Computer Science Club',
-        'Dean\'s List for 6 semesters'
+        'President of Computer Science Club'
       ]
     }
   ];
 
   const certifications = [
-    'AWS Certified Developer - Associate',
+    'Problem Solving(Python Basic) - HackerRank',
     'Google Analytics Certified',
-    'React Developer Certification',
     'Agile Development Certification'
   ];
 
@@ -102,12 +115,21 @@ const Resume = () => {
                         </div>
                       </div>
                       <ul className="space-y-2">
-                        {exp.achievements.map((achievement, i) => (
-                          <li key={i} className="text-gray-300 text-sm flex items-start">
-                            <span className="text-blue-400 mr-2">•</span>
-                            {achievement}
-                          </li>
-                        ))}
+                        {exp.projects.map((project, projectIndex) => (
+        <div key={projectIndex} className="space-y-2">
+          <h4 className="text-white font-medium">
+            Project {projectIndex + 1}: {project.title}
+          </h4>
+          <ul className="space-y-2">
+            {project.achievements.map((achievement, i) => (
+              <li key={i} className="text-gray-300 text-sm flex items-start">
+                <span className="text-blue-400 mr-2">•</span>
+                {achievement}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
                       </ul>
                     </div>
                   </div>

@@ -30,17 +30,18 @@ const Hero = () => {
         <div className="space-y-4 animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
             <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-              Alex Johnson
+              Mannem Saiteja
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-6">
-            Frontend Developer | Open-Source Advocate
+            Backend Developer | Python & NLP Focus
           </p>
           
           <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
-            Crafting beautiful, accessible web experiences with modern technologies. 
-            Passionate about clean code, user experience, and making the web a better place.
+            Building scalable backend systems with a focus on high-performance APIs, NLP, and search solutions 
+            (Elasticsearch). Passionate about efficient data workflows and clean, optimized code, backed by a 
+            strong foundation in data structures & algorithms.
           </p>
         </div>
 
